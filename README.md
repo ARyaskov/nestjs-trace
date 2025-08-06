@@ -2,7 +2,7 @@
 
 Lightweight NestJS tracing (debug print) plugin for controllers and services, supporting Express & Fastify, CJS & ESM.
 
-[![npm version](https://img.shields.io/npm/v/nestjs-trace)](https://www.npmjs.com/package/nestjs-trace)  
+[![npm version](https://img.shields.io/npm/v/@riaskov/nestjs-trace)](https://www.npmjs.com/package/@riaskov/nestjs-trace)  
 [![Module type: MinNode](https://img.shields.io/badge/Node.js->=20-brightgreen)]()
 [![Module type: MinNest](https://img.shields.io/badge/Nest.js->=11-brightgreen)]()
 ---

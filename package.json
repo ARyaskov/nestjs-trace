@@ -1,6 +1,6 @@
 {
   "name": "@riaskov/nestjs-trace",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight NestJS tracing (debug print) plugin for controllers and services",
   "homepage": "https://github.com/ARyaskov/nestjs-trace#readme",
   "repository": {
