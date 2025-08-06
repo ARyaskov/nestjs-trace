@@ -1,0 +1,51 @@
+{
+  "name": "@riaskov/nestjs-trace",
+  "version": "1.0.0",
+  "description": "Lightweight NestJS tracing (debug print) plugin for controllers and services",
+  "homepage": "https://github.com/ARyaskov/nestjs-trace#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ARyaskov/nestjs-trace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ARyaskov/nestjs-trace/issues",
+    "email": "code@riaskov.com"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./*": "./dist/*"
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "keywords": ["nestjs","trace","tracing","plugin","middleware","decorator","debug"],
+  "author": "Andrei Riaskov <code@riaskov.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2"
+  },
+  "devDependencies": {
+    "@swc/core": "1.13.3",
+    "@swc/helpers": "0.5.17",
+    "@types/node": "24.2.0",
+    "prettier": "3.6.2",
+    "tsup": "8.5.0",
+    "typescript": "5.9.2"
+  }
+}
